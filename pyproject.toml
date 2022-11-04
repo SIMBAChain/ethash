@@ -1,12 +1,13 @@
 [tool.poetry]
 name = "pyethash"
-version = "0.1.27.post0"
+version = "0.1.27.post1"
 description = "Python wrappers for ethash, the ethereum proof of work hashing function"
 authors = ["Matthew Wampler-Doty <matthew.wampler.doty@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 include = [
     {path = "*.so", format = "wheel"},
+    {path = "*.pyd", format = "wheel"},
     {path = "pyethash.egg-info/*", format = "wheel"}
 ]
 exclude = [
