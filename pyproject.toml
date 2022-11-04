@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pyethash"
+version = "0.1.27.post0"
+description = "Python wrappers for ethash, the ethereum proof of work hashing function"
+authors = ["Matthew Wampler-Doty <matthew.wampler.doty@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+include = [
+    {path = "*.so", format = "wheel"},
+    {path = "pyethash.egg-info/*", format = "wheel"}
+]
+exclude = [
+    "pyethash/**/*",
+]
+
+[tool.poetry.dependencies]
+python = ">3.8,<4.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "wheel", "setuptools"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.build]
+generate-setup-file = false
+script = "build.py"
