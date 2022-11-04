@@ -70,4 +70,5 @@ jobs:
         with:
           user: PAT
           password: ${{ secrets.gitlab_pypi_password }}
-          repository_url: https://gitlab.com/api/v4/groups/12361460/-/packages/pypi
+          repository_url: https://gitlab.com/api/v4/projects/40783425/packages/pypi
+          # https://gitlab.com/SIMBAChain/simba-enterprise-platform/ethash
