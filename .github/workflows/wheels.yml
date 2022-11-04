@@ -70,4 +70,4 @@ jobs:
         with:
           user: PAT
           password: ${{ secrets.gitlab_pypi_password }}
-          repository_url: https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/pypi
+          repository_url: https://gitlab.com/api/v4/groups/12361460/-/packages/pypi
